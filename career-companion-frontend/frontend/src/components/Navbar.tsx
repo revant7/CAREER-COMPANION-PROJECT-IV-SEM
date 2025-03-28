@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <motion.nav
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="fixed w-full text-white p-4 z-50"
+    >
+      <div className="mx-auto flex justify-between items-center">
         <Link to="/" className="text-white font-bold text-xl">
           Career Companion
         </Link>
@@ -64,7 +70,7 @@ const Navbar = () => {
           </Link>
         </div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
