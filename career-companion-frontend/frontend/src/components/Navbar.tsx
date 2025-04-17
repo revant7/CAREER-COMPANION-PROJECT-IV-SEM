@@ -23,11 +23,8 @@ const Navbar = () => {
           <Link to="/resources" className="text-gray-300 hover:text-white">
             Resources
           </Link>
-          <Link to="/community" className="text-gray-300 hover:text-white">
-            Community
-          </Link>
-          <Link to="/profile" className="text-gray-300 hover:text-white">
-            Profile
+          <Link to="/about" className="text-gray-300 hover:text-white">
+            About Us
           </Link>
           <Link to="/login" className="text-gray-300 hover:text-white">
             Login

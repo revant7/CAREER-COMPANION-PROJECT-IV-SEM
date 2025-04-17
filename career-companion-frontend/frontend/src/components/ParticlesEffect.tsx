@@ -6,7 +6,7 @@ import { type Container, type ISourceOptions } from '@tsparticles/engine';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 
 const ParticlesEffect = () => {
-    const [init, setInit] = useState(false);
+  const [init, setInit] = useState(false);
 
   // Initialize the particle engine once on mount
   useEffect(() => {
@@ -46,7 +46,7 @@ const ParticlesEffect = () => {
       fpsLimit: 60,
       particles: {
         number: {
-          value: 120, // Dense particle field
+          value: 60, // Dense particle field
           density: { enable: true, value_area: 800 },
         },
         color: {
@@ -58,7 +58,7 @@ const ParticlesEffect = () => {
         opacity: {
           value: { min: 0.3, max: 0.8 },
           random: true,
-          anim: { enable: true, speed: 1, opacity_min: 0.2 },
+          anim: { enable: true, speed: 0.6, opacity_min: 0.2 },
         },
         size: {
           value: { min: 1, max: 5 },
@@ -67,14 +67,14 @@ const ParticlesEffect = () => {
         },
         links: {
           enable: true,
-          distance: 150,
+          distance: 100,
           color: '#ffffff',
           opacity: 0.4,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 3,
+          speed: 2,
           direction: 'none',
           random: true,
           straight: false,
@@ -85,9 +85,9 @@ const ParticlesEffect = () => {
       interactivity: {
         detect_on: 'canvas',
         events: {
-          onHover: { enable: true, mode: 'grab' }, // Connect particles to cursor
-          onClick: { enable: true, mode: 'push' }, // Add particles on click
-          resize: { enable: true },
+          onHover: { enable: false, mode: 'grab' }, // Connect particles to cursor
+          onClick: { enable: false, mode: 'push' }, // Add particles on click
+          resize: { enable: false },
         },
         modes: {
           grab: { distance: 200, links: { opacity: 0.7 } },
@@ -105,17 +105,17 @@ const ParticlesEffect = () => {
 
   if (!init) return null; // Wait for particles engine to initialize
 
-    return (
-        <>
-            {/* Particles Background */}
-            <Particles
-                id="tsparticles"
-                particlesLoaded={particlesLoaded}
-                options={particlesOptions}
-                className="absolute inset-0 z-0"
-            />
-        </>
-    );
+  return (
+    <>
+      {/* Particles Background */}
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={particlesOptions}
+        className="absolute inset-0 z-0"
+      />
+    </>
+  );
 }
 
 export default ParticlesEffect;
