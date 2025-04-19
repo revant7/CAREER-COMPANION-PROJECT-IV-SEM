@@ -53,7 +53,7 @@ const ResourcesPage = () => {
                 ))}
             </main>
             <div className="text-center mt-12">
-                <button className="cta-button px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                <button className="cta-button px-6 py-2 bg-blue-600 text-text rounded-lg hover:bg-blue-700 transition-colors duration-300">
                     Get Started
                 </button>
             </div>

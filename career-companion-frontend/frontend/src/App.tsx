@@ -7,7 +7,6 @@ import Register from './components/Register'
 import AboutUs from './pages/About'
 import Footer from './components/Footer'
 import Login from './components/Login'
-import ParticlesEffect from './components/ParticlesEffect'
 import QuestionnaireForm from './components/QuestionnaireForm'
 import FeaturesOverview from './components/FeaturesOverview'
 import ExploreCareers from './pages/ExploreCareers'
@@ -20,7 +19,6 @@ function App() {
 
     <BrowserRouter>
       <div className="relative min-h-screen">
-        <ParticlesEffect />
         <Navbar />
         <Routes>
           <Route path="/" element={<><Home /> <FeaturesOverview /></>} />

@@ -77,7 +77,7 @@ const QuestionnaireForm = () => {
                     <button
                         type="button"
                         onClick={() => setStep(2)}
-                        className="bg-blue-500 text-white p-2 rounded"
+                        className="bg-blue-500 text-text p-2 rounded"
                     >
                         Next
                     </button>
@@ -127,7 +127,7 @@ const QuestionnaireForm = () => {
                     <button
                         type="button"
                         onClick={() => setStep(3)}
-                        className="bg-blue-500 text-white p-2 rounded"
+                        className="bg-blue-500 text-text p-2 rounded"
                     >
                         Next
                     </button>
@@ -169,7 +169,7 @@ const QuestionnaireForm = () => {
                     <button
                         type="button"
                         onClick={() => setStep(4)}
-                        className="bg-blue-500 text-white p-2 rounded"
+                        className="bg-blue-500 text-text p-2 rounded"
                     >
                         Next
                     </button>
@@ -194,7 +194,7 @@ const QuestionnaireForm = () => {
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
-                    <button type="submit" className="bg-green-500 text-white p-2 rounded">
+                    <button type="submit" className="bg-green-500 text-text p-2 rounded">
                         Submit
                     </button>
                 </div>

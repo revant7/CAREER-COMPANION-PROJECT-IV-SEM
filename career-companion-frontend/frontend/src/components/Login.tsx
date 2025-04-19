@@ -23,14 +23,14 @@ const Login = () => {
     return (
         <div className="min-h-screen flex items-center justify-center p-4 relative z-10">
             <div className="w-full max-w-md">
-                <h2 className="text-3xl font-bold text-center mb-6 text-white">
+                <h2 className="text-3xl font-bold text-center mb-6 text-text">
                     Welcome Back
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                         <label
                             htmlFor="email"
-                            className="block text-sm font-medium text-white mb-1"
+                            className="block text-sm font-medium text-text mb-1"
                         >
                             Email Address
                         </label>
@@ -48,7 +48,7 @@ const Login = () => {
                     <div>
                         <label
                             htmlFor="password"
-                            className="block text-sm font-medium text-white mb-1"
+                            className="block text-sm font-medium text-text mb-1"
                         >
                             Password
                         </label>
@@ -65,13 +65,13 @@ const Login = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                        className="w-full bg-blue-600 text-text py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200"
                     >
                         Login
                     </button>
                 </form>
                 <div className="mt-4 text-center">
-                    <p className="text-sm text-white">
+                    <p className="text-sm text-text">
                         Don’t have an account?
                         <Link to='/register' className="ml-1 text-blue-600 hover:underline font-medium">Register</Link>
                     </p>

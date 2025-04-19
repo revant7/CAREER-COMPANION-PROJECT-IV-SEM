@@ -41,40 +41,40 @@ const ParticlesEffect = () => {
   const particlesOptions: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: '#1a202c' }, // Dark background to match your theme
+        color: { value: '#F4F4F4' }, // Dark background to match your theme
       },
       fpsLimit: 60,
       particles: {
         number: {
-          value: 60, // Dense particle field
-          density: { enable: true, value_area: 800 },
+          value: 120, // Dense particle field
+          density: { enable: true, value_area: 1000 },
         },
         color: {
-          value: ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96c93d'], // Vibrant multi-color particles
+          value: ['#00FFFF', '#FF4500', '#32CD32', '#FF69B4', '#FFFF00'], // Vibrant multi-color particles
         },
         shape: {
           type: 'circle', // Clean, elegant shapes
         },
         opacity: {
-          value: { min: 0.3, max: 0.8 },
+          value: { min: 0.4, max: 0.8 },
           random: true,
-          anim: { enable: true, speed: 0.6, opacity_min: 0.2 },
+          anim: { enable: true, speed: 0.6, opacity_min: 0.3 },
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 2, max: 5 },
           random: true,
           anim: { enable: true, speed: 2, size_min: 0.5 },
         },
         links: {
           enable: true,
           distance: 100,
-          color: '#ffffff',
+          color: '#003366',
           opacity: 0.4,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 2,
+          speed: 2.5,
           direction: 'none',
           random: true,
           straight: false,
@@ -112,7 +112,7 @@ const ParticlesEffect = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={particlesOptions}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 h-full"
       />
     </>
   );

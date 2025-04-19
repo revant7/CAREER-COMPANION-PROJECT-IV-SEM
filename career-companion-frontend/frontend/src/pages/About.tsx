@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUs = () => {
     return (
-        <div className="about-us min-h-screen bg-navy-blue bg-fixed text-white relative overflow-hidden">
+        <div className="about-us min-h-screen bg-navy-blue bg-fixed text-text relative overflow-hidden">
             <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: "url('path/to/your/particle-effect-image.png')" }}></div>
             <header className="relative z-10 p-6 text-center">
                 <h1 className="text-4xl font-bold">About Us</h1>
@@ -49,7 +49,7 @@ const AboutUs = () => {
                     </p>
                 </section>
                 <div className="text-center my-12">
-                    <button className="cta-button px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    <button className="cta-button px-6 py-2 bg-blue-600 text-text rounded-lg hover:bg-blue-700 transition-colors duration-300">
                         Join Us
                     </button>
                 </div>
