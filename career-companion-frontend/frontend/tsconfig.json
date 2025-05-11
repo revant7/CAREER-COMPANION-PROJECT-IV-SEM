@@ -5,17 +5,36 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "jsx": "react-jsx",
+    "target": "es2020",
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,  // Important for .d.ts generation in project references
+    "outDir": "./dist",     // Where your final output goes
+    "rootDir": "./",
+    "sourceMap": true,
+    "removeComments": true,
+    "incremental": false,
+    "noEmitOnError": true,
+    "composite": true
   },
-  "include": ["src"]
+  // "compilerOptions": {
+  //   "target": "es5",
+  //   "lib": ["dom", "dom.iterable", "esnext"],
+  //   "allowJs": true,
+  //   "skipLibCheck": true,
+  //   "esModuleInterop": true,
+  //   "jsx": "react-jsx",
+  //   "module": "esnext",
+  //   "moduleResolution": "node",
+  //   "resolveJsonModule": true,
+  //   "isolatedModules": true,
+  //   "noEmit": true
+  // },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and the output directory
+  
 }

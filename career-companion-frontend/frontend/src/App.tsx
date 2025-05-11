@@ -11,6 +11,7 @@ import QuestionnaireForm from './components/QuestionnaireForm'
 import FeaturesOverview from './components/FeaturesOverview'
 import ExploreCareers from './pages/ExploreCareers'
 import ResourcesPage from './pages/Resources'
+import RoadmapPage from './pages/RoadmapPage'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/explore" element={<ExploreCareers />} />
           <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/roadmap/:skill" element={<RoadmapPage />} /> {/* Route to view a specific skill's roadmap */}
         </Routes>
         <Footer />
       </div>
